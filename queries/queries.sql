@@ -63,6 +63,9 @@ ORDER BY
 LIMIT 1;
 
 
+-- Note: No receipts had a 'rewardsReceiptStatus' of 'Accepted' in our dataset.
+-- We've assumed that 'Finished' status is equivalent to 'Accepted' for this analysis.
+-- This assumption should be verified with the data owners or business stakeholders.
 
 -- Average spend from receipts with 'rewardsReceiptStatus’ of ‘Accepted’ or ‘Rejected’
 SELECT 
